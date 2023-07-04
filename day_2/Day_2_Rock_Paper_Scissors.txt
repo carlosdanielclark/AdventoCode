@@ -43,14 +43,18 @@ C Z
 Esta guía de estrategia predice y recomienda lo siguiente:
 
 En la primera ronda, tu oponente elegirá Roca (A) y tú debes elegir Papel (Y). 
-Esto termina en una victoria para ti con una puntuación de 8 (2 porque elegiste Papel + 6 porque ganaste).
+Esto termina en una victoria para ti con una puntuación de 8 
+(2 porque elegiste Papel + 6 porque ganaste).
 
 En la segunda ronda, tu oponente elegirá Papel (B) y tú debes elegir Roca (X).
 Esto termina en una pérdida para ti con una puntuación de 1 (1 + 0).
 
-La tercera ronda es un empate con ambos jugadores eligiendo Tijeras, lo que le da una puntuación de 3 + 3 = 6.
+La tercera ronda es un empate con ambos jugadores eligiendo Tijeras, lo que le da 
+una puntuación de 3 + 3 = 6.
 
-En este ejemplo, si siguiera la guía de estrategia, obtendría una puntuación total de 15 (8 + 1 + 6).
+En este ejemplo, si siguiera la guía de estrategia, obtendría una puntuación total 
+de 15 (8 + 1 + 6).
 
-¿Cuál sería su puntaje total si todo sale exactamente de acuerdo con su guía de estrategia?
+¿Cuál sería su puntaje total si todo sale exactamente de acuerdo con su guía de 
+estrategia?
 */
