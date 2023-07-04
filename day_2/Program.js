@@ -26,7 +26,7 @@ function getRealFinalScore(input) {
   return maxScore;
 }
 
-// Funcion para calcular mis puntuaciones
+// Funcion para calcular mis puntuaciones 1ra Ronda
 function getScore(round) {
   const plays = round.split(' ');
   const myPlay = new Play(plays[1]);
@@ -39,8 +39,8 @@ function getScore(round) {
     return 3 + myPlay.score;
   }
 }
-
-// Funcion para calcular las puntuaciones del oponente
+// --- Parte Dos ---
+// Funcion para calcular mis puntuaciones 2da Ronda
 function getRealScore(round) {
   const plays = round.split(' ');
   const yourPlay = new Play(plays[0]);

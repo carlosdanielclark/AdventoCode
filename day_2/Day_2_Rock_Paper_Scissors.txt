@@ -58,3 +58,30 @@ de 15 (8 + 1 + 6).
 ¿Cuál sería su puntaje total si todo sale exactamente de acuerdo con su guía de 
 estrategia?
 */
+/*
+--- Part Two ---
+
+El elfo termina de ayudar con la tienda y vuelve a ti sigilosamente. "De todos modos, 
+la segunda columna dice cómo debe terminar la ronda: X significa que debes perder, 
+Y significa que debes terminar la ronda en un empate y Z significa que debes ganar. 
+¡Buena suerte!"
+
+La puntuación total todavía se calcula de la misma manera, pero ahora debe averiguar 
+qué forma elegir para que la ronda termine como se indica. El ejemplo anterior ahora es 
+así:
+
+En la primera ronda, tu oponente elegirá Rock (A), y necesitas que la ronda termine en 
+tablas (Y), así que también eliges Rock. Esto le da una puntuación de 1 + 3 = 4.
+
+En la segunda ronda, tu oponente elegirá Papel (B) y tú eliges Roca, por lo que perderás 
+(X) con una puntuación de 1 + 0 = 1.
+
+En la tercera ronda, derrotarás a las Tijeras de tu oponente con Rock por una puntuación 
+de 1 + 6 = 7.
+
+Ahora que está descifrando correctamente la guía de estrategia ultrasecreta, obtendrá 
+una puntuación total de 12.
+
+Siguiendo las instrucciones del duende para la segunda columna, ¿cuál sería tu puntaje 
+total si todo sale exactamente de acuerdo con tu guía de estrategia?
+*/
