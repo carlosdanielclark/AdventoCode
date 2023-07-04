@@ -1,6 +1,6 @@
 const fs = require('fs');
 path = require('path'),    
-data = path.join(__dirname, 'data2.txt');
+data = path.join(__dirname, 'data.txt');
 
 function getFinalScore(input) {
   const data = fs.readFileSync(input, 'utf-8');
@@ -101,7 +101,9 @@ class Play {
 
 // Obtener el puntaje total 
 const solution1 = getFinalScore(data);
-console.log(solution1);
+console.log('solution1: ',solution1); //13924
 
 const solution2 = getRealFinalScore(data);
-console.log(solution2);
+console.log('solution2: ',solution2); //13448
+
+
