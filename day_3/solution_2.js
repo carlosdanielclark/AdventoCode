@@ -1,8 +1,8 @@
 // Hacer grupos de tres
-const splitGroupOfThree = ( arr )=>{
+const splitGroupOfThree = ( prop )=>{
     let group = [];
-    for (let i = 0; i < arr.length; i += 3) {
-        group.push(arr.slice(i, i + 3));
+    for (let i = 0; i < prop.length; i += 3) {
+        group.push(prop.slice(i, i + 3));
     }
      return group;
 };
