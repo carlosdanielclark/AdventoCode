@@ -1,0 +1,103 @@
+/*
+--- Day 8: Treetop Tree House ---
+
+La expedición se encuentra con un parche peculiar de árboles altos, todos plantados 
+cuidadosamente en una cuadrícula. Los Elfos explican que una expedición anterior plantó 
+estos árboles como un esfuerzo de reforestación. Ahora, tienen curiosidad por saber si 
+este sería un buen lugar para una casa en el árbol.
+
+Primero, determine si hay suficiente cobertura de árboles aquí para mantener oculta una 
+casa en el árbol. Para hacer esto, debe contar la cantidad de árboles que son visibles 
+desde fuera de la cuadrícula cuando mira directamente a lo largo de una fila o columna.
+
+Los Elfos ya lanzaron un cuadricóptero para generar un mapa con la altura de cada árbol 
+(su entrada de rompecabezas). Por ejemplo:
+
+30373
+25512
+65332
+33549
+35390
+
+Cada árbol se representa como un solo dígito cuyo valor es su altura, donde 0 es el más 
+bajo y 9 es el más alto.
+
+Un árbol es visible si todos los demás árboles entre él y un borde de la cuadrícula son 
+más bajos que él. Solo considere árboles en la misma fila o columna; es decir, solo mire 
+hacia arriba, hacia abajo, hacia la izquierda o hacia la derecha desde cualquier árbol 
+determinado.
+
+Todos los árboles alrededor del borde de la cuadrícula son visibles; dado que ya están 
+en el borde, no hay árboles que bloqueen la vista. En este ejemplo, eso solo deja nueve 
+árboles interiores para considerar:
+
+El 5 superior izquierdo es visible desde la izquierda y la parte superior. 
+(No es visible desde la derecha o la parte inferior ya que hay otros árboles de 
+altura 5 en el camino).
+El 5 superior central es visible desde la parte superior y la derecha.
+El 1 superior derecho no es visible desde ninguna dirección; para que sea visible, 
+solo tendría que haber árboles de altura 0 entre él y un borde.
+El 5 central izquierdo es visible, pero solo desde la derecha.
+El centro 3 no es visible desde ninguna dirección; para que sea visible, solo tendría 
+que haber árboles de una altura máxima de 2 entre él y un borde.
+El 3 central derecho es visible desde la derecha.
+En la fila inferior, el 5 central es visible, pero el 3 y el 4 no lo son.
+
+Con 16 árboles visibles en el borde y otros 5 visibles en el interior, un total de 21 
+árboles son visibles en este arreglo.
+
+Your puzzle answer was 1672.
+
+The first half of this puzzle is complete! It provides one gold star: *
+
+--- Part Two ---
+
+Considere su mapa; ¿Cuántos árboles son visibles desde fuera de la cuadrícula?
+
+Contentos con la cantidad de árboles disponibles, los Elfos solo necesitan saber cuál 
+es el mejor lugar para construir su casa en el árbol: les gustaría poder ver muchos
+árboles.
+
+Para medir la distancia de visualización desde un árbol dado, mire hacia arriba, abajo, 
+izquierda y derecha desde ese árbol; deténgase si llega a un borde o al primer árbol 
+que tenga la misma altura o más que el árbol en cuestión. (Si un árbol está justo en 
+el borde, al menos una de sus distancias de visualización será cero).
+
+A los Elfos no les importan los árboles distantes más altos que los encontrados por las 
+reglas anteriores; la casa del árbol propuesta tiene grandes aleros para mantenerla 
+seca, por lo que de todos modos no podrían ver más alto que la casa del árbol.
+
+En el ejemplo anterior, considere el 5 del medio en la segunda fila:
+
+30373
+25512
+65332
+33549
+35390
+
+Mirando hacia arriba, su vista no está bloqueada; puede ver 1 árbol (de altura 3).
+Mirando a la izquierda, su vista se bloquea inmediatamente; solo puede ver 1 árbol 
+(de altura 5, justo al lado).
+Mirando a la derecha, su vista no está bloqueada; puede ver 2 árboles.
+Mirando hacia abajo, su vista se bloquea eventualmente; puede ver 2 árboles 
+(uno de altura 3, luego el árbol de altura 5 que bloquea su vista).
+
+La puntuación escénica de un árbol se encuentra multiplicando su distancia de 
+visualización en cada una de las cuatro direcciones. Para este árbol, esto es 4 
+(se encuentra al multiplicar 1 * 1 * 2 * 2).
+
+Sin embargo, puedes hacerlo aún mejor: considera el árbol de altura 5 en el medio de 
+la cuarta fila:
+
+30373
+25512
+65332
+33549
+35390
+
+La puntuación escénica de este árbol es 8 (2 * 2 * 1 * 2); este es el lugar ideal para 
+la casa del árbol.
+
+Considere cada árbol en su mapa. ¿Cuál es la puntuación escénica más alta posible para 
+cualquier árbol?
+*/

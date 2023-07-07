@@ -1,5 +1,5 @@
-path = require('path'),    
-input = path.join(__dirname, 'data.txt');
+const path = require('path');    
+const input = path.join(__dirname, 'data.txt');
 
 const { 
     getCompletyOverlapPairCount 
