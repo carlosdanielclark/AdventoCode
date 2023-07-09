@@ -118,14 +118,14 @@ The first half of this puzzle is complete! It provides one gold star: *
 
 Ahora, está listo para elegir un directorio para eliminar.
 
-El espacio total en disco disponible para el sistema de archivos es 70000000. Para 
-ejecutar la actualización, necesita un espacio no utilizado de al menos 30000000. Debe 
+El espacio total en disco disponible para el sistema de archivos es 70 000 000. Para 
+ejecutar la actualización, necesita un espacio no utilizado de al menos 30 000 000. Debe 
 encontrar un directorio que pueda eliminar que libere suficiente espacio para ejecutar 
 la actualización.
 
 En el ejemplo anterior, el tamaño total del directorio más externo (y, por lo tanto, la 
-cantidad total de espacio utilizado) es 48381165; esto significa que el tamaño del 
-espacio no utilizado actualmente debe ser 21618835, que no es exactamente el 30000000 
+cantidad total de espacio utilizado) es 48 381 165; esto significa que el tamaño del 
+espacio no utilizado actualmente debe ser 21 618 835, que no es exactamente el 30 000 000 
 requerido por la actualización. Por lo tanto, la actualización aún requiere que se 
 elimine un directorio con un tamaño total de al menos 8381165 antes de que pueda 
 ejecutarse.

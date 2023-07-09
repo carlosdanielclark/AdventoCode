@@ -1,18 +1,20 @@
-const isFile = (sentence)=> {
+// Archivo
+const isFile = (element)=> {
     try {
-      return parseInt(sentence.split(" ")[0]) >= 0;
+      return parseInt(element.split(" ")[0]) >= 0;
     } catch {
       return false;
     }
   }
   
-const isCommand = (sentence)=> {
-  return sentence.trim()[0] === "$";
+//Ejecutó comando
+const isCommand = (element)=> {
+  return element.trim()[0] === "$";
 }
-/*
-const isDir(sentence)=> {
-  return sentence.split(" ")[0] === "dir";
-}*/
+// Es un directorio
+const isDir = (element)=> {
+  return element.split(" ")[0] === "dir";
+}
 
 const getDirectory = (current, prev = "")=> {
   return prev === "" ? "/" : prev + current + "/";
@@ -42,13 +44,14 @@ const changeDir = (arg, props)=> {
 
 const list = (sentences, props)=> {
   do {
-    props.SentenceIndex++;
-    const sentence = sentences[props.SentenceIndex];
-    const sentenceParts = sentence.split(" ");
-    
+    props.SistemFiles++; 
+    const sentence = sentences[props.SistemFiles];
+    const sentenceParts = sentence.split(" "); 
+    // Exit view
     if (isFile(sentence)) {
-      for (const directory of props.Path) {                    
-        const fileSize = parseInt(sentenceParts[0]);   
+      for (const directory of props.Path) { 
+        // File size                    
+        const fileSize = parseInt(sentenceParts[0]);  
         props.Directories[directory].Size += fileSize;
         if (props.Directories[directory].Check) {
           const dirSize = props.Directories[directory].Size;
@@ -70,8 +73,8 @@ const list = (sentences, props)=> {
       }
     }
 
-    if (props.SentenceIndex >= sentences.length - 1) break;
-  } while (!isCommand(sentences[props.SentenceIndex + 1]));
+    if (props.SistemFiles >= sentences.length - 1) break;
+  } while (!isCommand(sentences[props.SistemFiles + 1]));
 }
 
 module.exports = {
