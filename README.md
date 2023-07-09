@@ -12,7 +12,7 @@
     
 # AdventoCode
 Solved exercises:
-1, 2, 3, 4, 6, 8.
+1, 2, 3, 4, 6, 7, 8.
 
 Note: The numbers are equivalent to days #
 Ex: Day 1 == exercise 1 == 1
