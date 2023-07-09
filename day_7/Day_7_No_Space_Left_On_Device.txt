@@ -110,4 +110,39 @@ este ejemplo, ¡este proceso puede contar archivos más de una vez!)
 Encuentre todos los directorios con un tamaño total de 100000 como máximo. ¿Cuál es la 
 suma de los tamaños totales de esos directorios?
 
+Your puzzle answer was 1325919.
+
+The first half of this puzzle is complete! It provides one gold star: *
+
+--- Part Two ---
+
+Ahora, está listo para elegir un directorio para eliminar.
+
+El espacio total en disco disponible para el sistema de archivos es 70000000. Para 
+ejecutar la actualización, necesita un espacio no utilizado de al menos 30000000. Debe 
+encontrar un directorio que pueda eliminar que libere suficiente espacio para ejecutar 
+la actualización.
+
+En el ejemplo anterior, el tamaño total del directorio más externo (y, por lo tanto, la 
+cantidad total de espacio utilizado) es 48381165; esto significa que el tamaño del 
+espacio no utilizado actualmente debe ser 21618835, que no es exactamente el 30000000 
+requerido por la actualización. Por lo tanto, la actualización aún requiere que se 
+elimine un directorio con un tamaño total de al menos 8381165 antes de que pueda 
+ejecutarse.
+
+Para conseguirlo, tienes las siguientes opciones:
+
+Elimine el directorio e, lo que aumentaría el espacio no utilizado en 584.
+Elimine el directorio a, lo que aumentaría el espacio no utilizado en 94853.
+Elimine el directorio d, lo que aumentaría el espacio no utilizado en 24933642.
+Elimine el directorio /, lo que aumentaría el espacio no utilizado en 48381165.
+
+Los directorios e y a son ambos demasiado pequeños; eliminarlos no liberaría suficiente 
+espacio. Sin embargo, los directorios d y / son lo suficientemente grandes. Entre estos, 
+elija el más pequeño: d, aumentando el espacio no utilizado en 24933642.
+
+Encuentre el directorio más pequeño que, si se elimina, liberaría suficiente espacio en 
+el sistema de archivos para ejecutar la actualización. ¿Cuál es el tamaño total de ese 
+directorio?
+
 */

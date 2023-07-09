@@ -1,1 +1,1 @@
-require('./day_8/Program');
+require('./day_7/Program');
