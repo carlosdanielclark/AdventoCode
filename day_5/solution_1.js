@@ -8,16 +8,14 @@ const getCratesString = (input)=> {
   const [boxes, instructions] = getData( reader );
   const { Count, Stack } = stacks(boxes);
 
-  let supplyStacks=[], crateString = '';
+  let crateString = '';
   for (let i = 0; i < instructions.length; i++) {
     const {move, from, to} = getInstruction(instructions[i]);
     let [stackList, topStacks] = arrangeBoxes(Stack, move, from, to);
-    supplyStacks.push( stackList )
     crateString = topStacks;
-    //console.log( 'crateString: ', crateString )
   }
   
-  return crateString;
+    return crateString;
 }
 
 const getData = (prop)=> {

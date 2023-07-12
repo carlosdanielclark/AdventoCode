@@ -11,7 +11,7 @@ const arrangeBoxes = (stacks, move, from, to)=>{
         const e = stacks[i][fromCol];
         if( e!=='' && counter<move){ 
             stacks[i][fromCol] = '';
-            store.push( e );
+            store.push( e ); // ( unshift ) para solución 2
             counter++ 
         };
     }
