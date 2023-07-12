@@ -7,5 +7,6 @@ const {
 } = require('./solution_1');
 
 getCratesString(input)
-
+console.log( getCratesString(input) )
+// VJSFHWGFT
 

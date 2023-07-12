@@ -1,7 +1,7 @@
 // Ordenar elementos en array
 const arrangeBoxes = (stacks, move, from, to)=>{
     let size = stacks.length-1;
-    let subSize = stacks[0].length-1;
+    let subSize = stacks[size].length-1;
     let fromCol = from - 1;
     let toCol = to - 1; 
     
@@ -54,27 +54,24 @@ const arrangeBoxes = (stacks, move, from, to)=>{
 };
 
 const topBoxes = (prop)=> {
-    let auxStore = [];
-    for(const e1 of prop) {
-      let row = 0;
-      
-      
-      if( e1[row]!=='' && row<e1.length && typeof e1 !== "number"){
-        console.log( 'e1: ',e1[row] )
-        //auxStore.push( e1 );
-        row++;
-      }
-      /*e1.forEach( (e2) => { console.log( 'e2: ',e2 )
-        if( e2!=='' && col<e1.length && typeof e2 !== "number"){
-            
-          auxStore.push( e2 );
-          col++;
+    let size = prop.length-1, n = prop[size].length - 1;
+    let auxStore = Array(n+1).fill('');
+    // Recorrer elemntos del array
+    for (let col = 0; col < auxStore.length; col++) {
+        const e1 = auxStore[col];
+        if( e1 === '' ){
+            for (let row = 0; row < prop.length; row++) {
+                const e2 = prop[row][col];
+                if(e2 !== '' && typeof e2 !== "number"){
+                    auxStore[col] = e2;
+                    break;
+                }
+            }
         }
-      });*/
     }
-    let store = auxStore.join(' ')
+    let store = auxStore.join('')
     return store;
-  };
+};
 
 module.exports={
     arrangeBoxes

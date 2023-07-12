@@ -76,4 +76,65 @@ por lo que debe combinarlas y dar a los Elfos el mensaje CMZ.
 
 Después de que se completa el procedimiento de reordenamiento, ¿qué caja termina en la 
 parte superior de cada pila? 
+
+Your puzzle answer was VJSFHWGFT.
+
+The first half of this puzzle is complete! It provides one gold star: *
+
+--- Part Two ---
+
+Mientras observa al operador de la grúa reorganizar hábilmente las cajas, nota que el 
+proceso no sigue su predicción.
+
+Un poco de lodo estaba cubriendo la escritura en el costado de la grúa, y rápidamente 
+lo limpiaste. La grúa no es una CrateMover 9000, es una CrateMover 9001.
+
+El CrateMover 9001 se destaca por muchas características nuevas y emocionantes: aire 
+acondicionado, asientos de cuero, un portavasos adicional y la capacidad de levantar y 
+mover varias cajas a la vez.
+
+Nuevamente, considerando el ejemplo anterior, las cajas comienzan con la misma 
+configuración:
+
+    [D]    
+[N] [C]    
+[Z] [M] [P]
+ 1   2   3 
+Mover una sola caja de la pila 2 a la pila 1 se comporta igual que antes:
+
+[D]        
+[N] [C]    
+[Z] [M] [P]
+ 1   2   3 
+Sin embargo, la acción de mover tres cajas de la pila 1 a la pila 3 significa que esas 
+tres cajas movidas permanecen en el mismo orden, lo que da como resultado esta nueva 
+configuración:
+
+        [D]
+        [N]
+    [C] [Z]
+    [M] [P]
+ 1   2   3
+Luego, cuando ambas cajas se mueven de la pila 2 a la pila 1, también conservan su orden:
+
+        [D]
+        [N]
+[C]     [Z]
+[M]     [P]
+ 1   2   3
+Finalmente, una sola caja todavía se mueve de la pila 1 a la pila 2, pero ahora es la 
+caja C la que se mueve:
+
+        [D]
+        [N]
+        [Z]
+[M] [C] [P]
+ 1   2   3
+En este ejemplo, el CrateMover 9001 ha colocado las cajas en un orden totalmente 
+diferente: MCD.
+
+Antes de que finalice el proceso de reorganización, actualice su simulación para que 
+los Elfos sepan dónde deben pararse para estar listos para descargar los suministros 
+finales. Después de que se completa el procedimiento de reordenamiento, 
+¿qué caja termina en la parte superior de cada pila?
 */

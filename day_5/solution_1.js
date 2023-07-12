@@ -8,27 +8,16 @@ const getCratesString = (input)=> {
   const [boxes, instructions] = getData( reader );
   const { Count, Stack } = stacks(boxes);
 
-  console.log( 'Stack: ',Stack )
-
-  /* Area de desarrollo */
-  const {move, from, to} = getInstruction(instructions[0]);
-  console.log({move, from, to} )
-  const [stackList, topStacks] = arrangeBoxes(Stack, move, from, to);
-  console.log( 'stackList: ',stackList )
-  console.log( 'topStacks: ',topStacks )
-
-  /*Area de produccion*//*
   let supplyStacks=[], crateString = '';
   for (let i = 0; i < instructions.length; i++) {
     const {move, from, to} = getInstruction(instructions[i]);
     let [stackList, topStacks] = arrangeBoxes(Stack, move, from, to);
-    console.log( 'supplyStacks: ', stackList )
+    supplyStacks.push( stackList )
     crateString = topStacks;
-    console.log( 'crateString: ', crateString )
-
+    //console.log( 'crateString: ', crateString )
   }
-  */
-  return true;
+  
+  return crateString;
 }
 
 const getData = (prop)=> {
